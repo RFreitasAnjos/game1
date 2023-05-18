@@ -1,0 +1,101 @@
+:root{
+    --color1:hsl(210, 100%, 49%);
+    --color2:#00d8e8;
+    --color3:#014f8f;
+    --color4:#000000;
+    --color5:#ffffff;
+    --transparent:rgb(255,255,255,0.3);
+    --font1:'Kanit', sans-serif;
+    --font2:'Roboto Mono', monospace;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto+Mono:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tela{
+    width: 80%;
+    height: 500px;
+    border-bottom: rgb(0, 0, 0) 20px solid;
+    background: url(stars.gif) black ;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    animation: trovao 10s ease-in-out infinite;
+}
+.sonic{
+    width: 100px;
+    bottom: 0;
+    position: absolute;
+}
+.up{
+    animation: up-sonic 0.5s ease-out;
+}
+#flower{
+    width: 100px;
+    bottom: 0;
+    position: absolute;
+}
+.robotinik{
+    position: absolute;
+    width: 160px;
+    animation: 10s robotinik infinite linear;
+}
+.bat{
+    position: absolute;
+    top: 600px;
+    width: 80px;
+    animation: bat-fly 8s infinite linear;
+}
+.bullet{
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    animation: bullet 1s infinite linear;
+}
+@keyframes bullet{
+    from {
+        right: -80%;
+    }
+    to {
+        right: 100%
+    }
+}
+@keyframes bat-fly{
+    from {
+        right: -80%;
+    }
+    to {
+        right: 100%
+    }
+}
+
+@keyframes up-sonic{
+    0% {
+        bottom: 0;
+    }
+    40%{
+        bottom: 90px;
+    }
+    60%{
+        bottom: 90px;
+    }
+    80%{
+        bottom: 90px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes robotinik{
+    from{
+        right: -550px;
+        
+    }
+    to{
+        right: 100%;
+        
+    }
+}
